@@ -1,9 +1,26 @@
 #img-bg {
-    background-image: url("../../assets/img/Beautyful.jpg");
+    background-image: url("../../assets/img/MyPostAjustado.jpg");
 
     min-height: 695px;
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.cor-bg-cadastrar {
+    background-color: #475159;
+}
+
+.cor-bg-cadastrar2 {
+    background-color: #101E26;
+    
+}
+
+.cor-textoCadastro {
+    color: #A4B3BF;
+}
+
+.opacidade {
+    opacity: 0.5;
 }
