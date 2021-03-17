@@ -25,3 +25,15 @@ ul.social-network li {
 .fa-github-square:hover {
     color: #171515 ;
 }
+
+.cor-rodape {
+    background-color: #101E26;
+}
+
+.cor-rodapecopy {
+    background-color: #475159;
+}
+
+.cor-textosRodape {
+    color: #A4B3BF;
+}
