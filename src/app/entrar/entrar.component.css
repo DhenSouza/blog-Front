@@ -7,3 +7,19 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.cor-bg-entrar {
+    background-color: #101E26;
+}
+
+.cor-bg-entrar2 {
+    background-color: #475159;
+}
+
+.cor-texto {
+    color: #A4B3BF;
+}
+
+.opacidade {
+    opacity: 0.5;
+}

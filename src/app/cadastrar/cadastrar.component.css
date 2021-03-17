@@ -1,5 +1,5 @@
 #img-bg {
-    background-image: url("../../assets/img/MyPostAjustado.jpg");
+    background-image: url("../../assets/img/MyPost.jpg");
 
     min-height: 695px;
 
@@ -19,8 +19,4 @@
 
 .cor-textoCadastro {
     color: #A4B3BF;
-}
-
-.opacidade {
-    opacity: 0.5;
 }
