@@ -6,3 +6,11 @@
 a {
     cursor: pointer;
 }
+
+.cor-navbar {
+    background-color: #101E26;
+}
+
+.cor-texto {
+    color: #A4B3BF;
+}
