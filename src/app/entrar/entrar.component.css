@@ -17,9 +17,16 @@
 }
 
 .cor-texto {
-    color: #A4B3BF;
+    color: #BFBFBD;
+   font-weight: bolder;
+   text-align: left;
+   text-transform: uppercase;
 }
 
 .opacidade {
     opacity: 0.5;
+}
+
+.cadastrar-botao:hover {
+    text-decoration: none;
 }
