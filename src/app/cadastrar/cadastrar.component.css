@@ -1,11 +1,13 @@
+@media screen {
 #img-bg {
     background-image: url("../../assets/img/MyPost.jpg");
 
     min-height: 695px;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+    
 }
 
 .cor-bg-cadastrar {
