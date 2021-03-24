@@ -23,11 +23,11 @@ export class CadastrarComponent implements OnInit {
   }
 
   confirmSenha(event: any) {
-    this.confirmarSenha = event.targe.value
+    this.confirmarSenha = event.target.value
   }
 
   tipoUser(event: any) {
-    this.tipoUsuario = event.targe.value
+    this.tipoUsuario = event.target.value
   }
 
   cadastrar() {
@@ -35,7 +35,7 @@ export class CadastrarComponent implements OnInit {
 
     if(this.user.senha != this.confirmarSenha){
       alert("A senhas estão incoretas.")
-    } else() {
+    } else {
       this.authService.cadastrar(this.user).subscribe((resp: User) => {
         this.user = resp
         this.router.navigate(['/entrar'])
