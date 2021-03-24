@@ -14,3 +14,8 @@ a {
 .cor-texto {
     color: #A4B3BF;
 }
+
+.limite-foto {
+    max-width: 50px;
+    max-height: 50px;
+}
