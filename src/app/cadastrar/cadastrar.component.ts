@@ -29,15 +29,17 @@ export class CadastrarComponent implements OnInit {
   }
 
   cadastrar() {
-    this.user.tipo = this.tipoUsuario
-
-    if(this.user.senha != this.confirmarSenha){
-      alert("A senhas estão incoretas.")
+    if(this.confirmarSenha != this.user.senha){
+      alert("Senhas não conferem")
     } else {
-      this.authService.cadastrar(this.user).subscribe((resp: User) => {
-        this.user = resp
-        this.router.navigate(['/entrar'])
-        alert('Usuário cadastrado com sucesso!')
+      this.authService.cadastrar(this.user).subscribe((resp: User) =>{
+        if(resp == null){
+          alert("Esse Usuario já existe")
+        } else {
+          this.user = resp
+          this.router.navigate(['/entrar'])
+          alert("Deu Bom Queride")
+        }
       })
     }
     
