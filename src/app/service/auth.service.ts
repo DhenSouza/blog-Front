@@ -10,14 +10,16 @@ import { UserLogin } from '../model/UserLogin';
 })
 export class AuthService {
 
+  baseUrl = environment.server + environment.port
+
   constructor(private http: HttpClient) { }
 
   entrar(userLogin: UserLogin): Observable<UserLogin>{
-    return this.http.post<UserLogin>(`${environment.server}${environment.port}/usuarios/logar`, userLogin)
+    return this.http.post<UserLogin>(`${this.baseUrl}/usuarios/logar`, userLogin)
   }
 
   cadastrar(user: User): Observable<User>{
-    return this.http.post<User>(`${environment.server}${environment.port}/usuarios/cadastrar`, user)
+    return this.http.post<User>(`${this.baseUrl}/usuarios/cadastrar`, user)
   }
 
   logado() {
