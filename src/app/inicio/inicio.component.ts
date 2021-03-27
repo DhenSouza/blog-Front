@@ -14,12 +14,11 @@ import { TemaService } from '../service/tema.service';
 })
 export class InicioComponent implements OnInit {
 
-  postagem: Postagem = new Postagem
+  postagem: Postagem = new Postagem()
   listaPostagens: Postagem[]
-
-  tema: Tema = new Tema
+  
+  tema: Tema = new Tema()
   listaTemas: Tema[]
-
   idTema: number
 
   user: User = new User()
