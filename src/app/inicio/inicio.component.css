@@ -11,6 +11,14 @@
     background-color: #BEC7C7;
 }
 
-.cor-texto {
+.cor-texto-inicio {
     color: #BB2020;
+}
+
+.cor-navbar {
+    background-color: #101E26;
+}
+
+.cor-texto {
+    color: #A4B3BF;
 }
