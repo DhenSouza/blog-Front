@@ -85,10 +85,10 @@
 
           
           <div class="card-columns" *ngFor='let tema of listaTemas' > 
-            <div class="card text-center" *ngFor='let item of tema.postagem' >
+            <div class="card text-center" *ngFor='let item of tema.postagens' >
               <div class="card-body" >
                 <h5 class="card-title m-0">{{item.titulo}}</h5>
-                <small class="text-muted"> Tema: {{item.tema.nome}} </small>
+                
                 <p class="card-text mt-3">{{item.texto}}</p>
                 <p class="card-text"><small class="text-muted">
                   {{item.data | date:'dd/MM/yyyy'}} às {{item.data | date:'HH:mm'}}
@@ -97,7 +97,7 @@
               </div>
             </div>
           </div>
-          pq
+          
         </div>
 
       </div>
