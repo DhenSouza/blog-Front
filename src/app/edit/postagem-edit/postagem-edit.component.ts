@@ -27,13 +27,8 @@ export class PostagemEditComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
     window.scroll(0,0)
-
-    if(environment.token == ''){
-      this.router.navigate(['/entrar'])
-    }
-
+    
     let id = this.route.snapshot.params['id']
     this.findByIdPostagem(id)
     this.findAllTemas()
