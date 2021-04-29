@@ -11,6 +11,7 @@ import { UserLogin } from '../model/UserLogin';
 export class AuthService {
 
   baseUrl = environment.server + environment.port
+  // tipo = environment.tipo
 
   constructor(private http: HttpClient) { }
 
@@ -44,6 +45,15 @@ export class AuthService {
       ok = true
     }
 
+    return ok
+  }
+
+  adm() {
+    let ok: boolean = false
+
+    if(environment.tipo == 'adm') {
+      ok = true
+    }
     return ok
   }
 }
