@@ -28,6 +28,12 @@ export class PostagemService {
     return this.http.get<Postagem>(`${this.url}/postagens/${id}`, this.token)
   }
 
+  getByTituloPostagem(titulo: string): Observable<Postagem[]> {
+    return this.http.get<Postagem[]>(`${this.url}/postagens/titulo/${titulo}`, {
+      headers: {'Authorization': environment.token}
+    })
+  }
+
   postPostagem(postagem: Postagem): Observable<Postagem> {
     return this.http.post<Postagem>(`${this.url}/postagens`, postagem, this.token)
   }

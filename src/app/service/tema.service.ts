@@ -25,6 +25,12 @@ export class TemaService {
   return this.http.get<Tema>(`${this.url}/temas/${id}`, this.token)
   }
 
+  getByNomeTema(nome: string): Observable<Tema[]> {
+    return this.http.get<Tema[]>(`${this.url}/temas/nome/${nome}`, {
+      headers: {'Authorization': environment.token}
+    })
+  }
+
   postTema(tema: Tema): Observable<Tema> {
     return this.http.post<Tema>(`${this.url}/temas`, tema, this.token)
   }
